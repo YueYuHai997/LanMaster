@@ -1,0 +1,70 @@
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Release</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{A4C8129E-FAB3-4C9E-94F6-D92CF4CFF43C}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>LanControlWpf</RootNamespace>
+    <AssemblyName>LanControlTool</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <LangVersion>latest</LangVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <Optimize>true</Optimize>
+    <DebugType>none</DebugType>
+  </PropertyGroup>
+  <PropertyGroup />
+  <PropertyGroup>
+    <ApplicationIcon>64tcb-javlm-001.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <Optimize>true</Optimize>
+    <PlatformTarget>x64</PlatformTarget>
+    <LangVersion>latest</LangVersion>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="WindowsBase" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="MonoTorrent"><HintPath>..\packages\MonoTorrent.3.0.2\lib\net472\MonoTorrent.dll</HintPath><Private>True</Private></Reference>
+    <Reference Include="MonoTorrent.Client"><HintPath>..\packages\MonoTorrent.3.0.2\lib\net472\MonoTorrent.Client.dll</HintPath><Private>True</Private></Reference>
+    <Reference Include="MonoTorrent.BEncoding"><HintPath>..\packages\MonoTorrent.3.0.2\lib\net472\MonoTorrent.BEncoding.dll</HintPath><Private>True</Private></Reference>
+    <Reference Include="MonoTorrent.Connections"><HintPath>..\packages\MonoTorrent.3.0.2\lib\net472\MonoTorrent.Connections.dll</HintPath><Private>True</Private></Reference>
+    <Reference Include="MonoTorrent.Messages"><HintPath>..\packages\MonoTorrent.3.0.2\lib\net472\MonoTorrent.Messages.dll</HintPath><Private>True</Private></Reference>
+    <Reference Include="MonoTorrent.PiecePicking"><HintPath>..\packages\MonoTorrent.3.0.2\lib\net472\MonoTorrent.PiecePicking.dll</HintPath><Private>True</Private></Reference>
+    <Reference Include="MonoTorrent.PieceWriter"><HintPath>..\packages\MonoTorrent.3.0.2\lib\net472\MonoTorrent.PieceWriter.dll</HintPath><Private>True</Private></Reference>
+    <Reference Include="MonoTorrent.PortForwarding"><HintPath>..\packages\MonoTorrent.3.0.2\lib\net472\MonoTorrent.PortForwarding.dll</HintPath><Private>True</Private></Reference>
+    <Reference Include="MonoTorrent.Trackers"><HintPath>..\packages\MonoTorrent.3.0.2\lib\net472\MonoTorrent.Trackers.dll</HintPath><Private>True</Private></Reference>
+    <Reference Include="MonoTorrent.Factories"><HintPath>..\packages\MonoTorrent.3.0.2\lib\net472\MonoTorrent.Factories.dll</HintPath><Private>True</Private></Reference>
+    <Reference Include="Mono.Nat"><HintPath>..\packages\MonoTorrent.3.0.2\lib\net472\Mono.Nat.dll</HintPath><Private>True</Private></Reference>
+    <Reference Include="ReusableTasks"><HintPath>..\packages\ReusableTasks.4.0.0\lib\netstandard2.0\ReusableTasks.dll</HintPath><Private>True</Private></Reference>
+    <Reference Include="StandardSocketsHttpHandler"><HintPath>..\packages\StandardSocketsHttpHandler.2.2.0.4\lib\netstandard2.0\StandardSocketsHttpHandler.dll</HintPath><Private>True</Private></Reference>
+    <Reference Include="System.Memory"><HintPath>..\packages\System.Memory.4.5.1\lib\netstandard2.0\System.Memory.dll</HintPath><Private>True</Private></Reference>
+    <Reference Include="System.Buffers"><HintPath>..\packages\System.Buffers.4.4.0\lib\netstandard2.0\System.Buffers.dll</HintPath><Private>True</Private></Reference>
+    <Reference Include="System.Numerics.Vectors"><HintPath>..\packages\System.Numerics.Vectors.4.4.0\lib\net46\System.Numerics.Vectors.dll</HintPath><Private>True</Private></Reference>
+    <Reference Include="System.Runtime.CompilerServices.Unsafe"><HintPath>..\packages\System.Runtime.CompilerServices.Unsafe.4.5.0\lib\netstandard2.0\System.Runtime.CompilerServices.Unsafe.dll</HintPath><Private>True</Private></Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml" />
+    <Compile Include="App.xaml.cs" />
+    <Compile Include="MainWindow.xaml.cs" />
+    <Compile Include="Models.cs" />
+    <Compile Include="FileDistributionService.cs" />
+    <Page Include="MainWindow.xaml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="64tcb-javlm-001.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
