@@ -1,9 +1,9 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\Works\\\u5C40\u57DF\u7F51\u8C03\u8BD5\u5DE5\u5177\\LanControlWpf\\",
+  "WorkspaceRootPath": "D:\\Works\\LanMaster\\LanControlWpf\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A4C8129E-FAB3-4C9E-94F6-D92CF4CFF43C}|LanControlWpf.csproj|d:\\works\\\u5C40\u57DF\u7F51\u8C03\u8BD5\u5DE5\u5177\\lancontrolwpf\\mainwindow.xaml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "AbsoluteMoniker": "D:0:0:{A4C8129E-FAB3-4C9E-94F6-D92CF4CFF43C}|LanControlWpf.csproj|d:\\works\\lanmaster\\lancontrolwpf\\mainwindow.xaml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
       "RelativeMoniker": "D:0:0:{A4C8129E-FAB3-4C9E-94F6-D92CF4CFF43C}|LanControlWpf.csproj|solutionrelative:mainwindow.xaml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
     },
     {
@@ -34,9 +34,9 @@
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "MainWindow.xaml",
-              "DocumentMoniker": "D:\\Works\\\u5C40\u57DF\u7F51\u8C03\u8BD5\u5DE5\u5177\\LanControlWpf\\MainWindow.xaml",
+              "DocumentMoniker": "D:\\Works\\LanMaster\\LanControlWpf\\MainWindow.xaml",
               "RelativeDocumentMoniker": "MainWindow.xaml",
-              "ToolTip": "D:\\Works\\\u5C40\u57DF\u7F51\u8C03\u8BD5\u5DE5\u5177\\LanControlWpf\\MainWindow.xaml",
+              "ToolTip": "D:\\Works\\LanMaster\\LanControlWpf\\MainWindow.xaml",
               "RelativeToolTip": "MainWindow.xaml",
               "ViewState": "AgIAAP0AAAAAAAAAAAAYwBEBAAAOAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
