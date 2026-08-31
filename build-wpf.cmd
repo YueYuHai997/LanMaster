@@ -5,7 +5,7 @@ if not exist "%MSBUILD%" (
   echo MSBuild was not found.
   exit /b 1
 )
-"%MSBUILD%" "LanControlWpf\LanControlWpf.csproj" /t:Rebuild /p:Configuration=Release /v:minimal
+"%MSBUILD%" "LanControlWpf\LanControlWpf.csproj" /restore /t:Rebuild /p:Configuration=Release /v:minimal
 if errorlevel 1 exit /b %errorlevel%
 if not exist "release" mkdir "release"
 copy /y "LanControlWpf\bin\Release\LanControlTool.exe" "release\LanControlTool.exe" >nul

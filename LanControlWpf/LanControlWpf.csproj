@@ -17,6 +17,7 @@
   <PropertyGroup />
   <PropertyGroup>
     <ApplicationIcon>64tcb-javlm-001.ico</ApplicationIcon>
+    <RestoreProjectStyle>PackageReference</RestoreProjectStyle>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
     <OutputPath>bin\x64\Release\</OutputPath>
@@ -59,12 +60,16 @@
     <ApplicationDefinition Include="App.xaml" />
     <Compile Include="App.xaml.cs" />
     <Compile Include="MainWindow.xaml.cs" />
+    <Compile Include="ModernMessageBox.cs" />
     <Compile Include="Models.cs" />
     <Compile Include="FileDistributionService.cs" />
     <Page Include="MainWindow.xaml" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="64tcb-javlm-001.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="MaterialDesignThemes" Version="5.3.2" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

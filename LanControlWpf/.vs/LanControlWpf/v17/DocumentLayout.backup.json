@@ -3,7 +3,11 @@
   "WorkspaceRootPath": "D:\\Works\\LanMaster\\LanControlWpf\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A4C8129E-FAB3-4C9E-94F6-D92CF4CFF43C}|LanControlWpf.csproj|d:\\works\\lanmaster\\lancontrolwpf\\mainwindow.xaml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "AbsoluteMoniker": "D:0:0:{A4C8129E-FAB3-4C9E-94F6-D92CF4CFF43C}|LanControlWpf.csproj|d:\\works\\lanmaster\\lancontrolwpf\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{A4C8129E-FAB3-4C9E-94F6-D92CF4CFF43C}|LanControlWpf.csproj|solutionrelative:mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A4C8129E-FAB3-4C9E-94F6-D92CF4CFF43C}|LanControlWpf.csproj|D:\\Works\\LanMaster\\LanControlWpf\\mainwindow.xaml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
       "RelativeMoniker": "D:0:0:{A4C8129E-FAB3-4C9E-94F6-D92CF4CFF43C}|LanControlWpf.csproj|solutionrelative:mainwindow.xaml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
     },
     {
@@ -17,11 +21,23 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
+              "Title": "MainWindow.xaml",
+              "DocumentMoniker": "D:\\Works\\LanMaster\\LanControlWpf\\MainWindow.xaml",
+              "RelativeDocumentMoniker": "MainWindow.xaml",
+              "ToolTip": "D:\\Works\\LanMaster\\LanControlWpf\\MainWindow.xaml",
+              "RelativeToolTip": "MainWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-08-31T05:31:35.532Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "XamlReader.cs",
               "DocumentMoniker": "C:\\Users\\MoregetWYC\\AppData\\Local\\Temp\\.vsdbgsrc\\ff2b5740999277b761727f59beb98933cf7af273b1d39c87bea0f2679df0156a\\XamlReader.cs",
               "ToolTip": "C:\\Users\\MoregetWYC\\AppData\\Local\\Temp\\.vsdbgsrc\\ff2b5740999277b761727f59beb98933cf7af273b1d39c87bea0f2679df0156a\\XamlReader.cs [\u53EA\u8BFB]",
@@ -32,16 +48,15 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "MainWindow.xaml",
               "DocumentMoniker": "D:\\Works\\LanMaster\\LanControlWpf\\MainWindow.xaml",
               "RelativeDocumentMoniker": "MainWindow.xaml",
               "ToolTip": "D:\\Works\\LanMaster\\LanControlWpf\\MainWindow.xaml",
               "RelativeToolTip": "MainWindow.xaml",
-              "ViewState": "AgIAAP0AAAAAAAAAAAAYwBEBAAAOAAAAAAAAAA==",
+              "ViewState": "AgIAAE8BAAAAAAAAAAAYwGUBAAApAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2026-08-28T05:48:38.706Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-08-28T05:48:38.706Z"
             }
           ]
         }

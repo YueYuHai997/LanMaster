@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "toNWOfM/ynQ=",
+  "success": true,
+  "projectFilePath": "D:\\Works\\LanMaster\\LanControlWpf\\LanControlWpf.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\MoregetWYC\\.nuget\\packages\\materialdesigncolors\\5.3.2\\materialdesigncolors.5.3.2.nupkg.sha512",
+    "C:\\Users\\MoregetWYC\\.nuget\\packages\\materialdesignthemes\\5.3.2\\materialdesignthemes.5.3.2.nupkg.sha512",
+    "C:\\Users\\MoregetWYC\\.nuget\\packages\\microsoft.xaml.behaviors.wpf\\1.1.77\\microsoft.xaml.behaviors.wpf.1.1.77.nupkg.sha512"
+  ],
+  "logs": []
+}
