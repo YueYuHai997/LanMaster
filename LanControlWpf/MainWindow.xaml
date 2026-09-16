@@ -194,7 +194,7 @@
                                LeftDrawerCloseOnClickAway="True"
                                RightDrawerCloseOnClickAway="True">
 		<materialDesign:DrawerHost.LeftDrawerContent>
-			<Border Width="500" Background="#FAFBFD">
+			<Border Width="540" Background="#FAFBFD">
 				<DockPanel LastChildFill="True">
 					<Border DockPanel.Dock="Top" Background="White" Padding="24,18" BorderBrush="#E2E7EF" BorderThickness="0,0,0,1">
 						<Grid>
@@ -262,6 +262,88 @@
 								<TextBox x:Name="DistributionFolderBox" />
 								<Button Grid.Column="1" Content="浏览" Style="{StaticResource SecondaryButton}" Click="BrowseDistributionFolder_Click" />
 							</Grid>
+
+							<Separator Margin="0,20,0,18" />
+							<TextBlock Text="本机 IP 快速切换" FontSize="17" FontWeight="SemiBold" />
+							<TextBlock Text="选择需要修改的网卡；应用静态 IP 前会先探测地址冲突。" Style="{StaticResource MutedText}" TextWrapping="Wrap" Margin="0,4,0,8" />
+							<TextBlock Text="网络适配器" Style="{StaticResource FieldLabel}" />
+							<Grid>
+								<Grid.ColumnDefinitions>
+									<ColumnDefinition Width="*" />
+									<ColumnDefinition Width="Auto" />
+								</Grid.ColumnDefinitions>
+								<ComboBox x:Name="NetworkAdapterBox"
+										  DisplayMemberPath="DisplayName"
+										  SelectionChanged="NetworkAdapterBox_SelectionChanged" />
+								<Button Grid.Column="1" Content="刷新" Style="{StaticResource SecondaryButton}" Click="RefreshNetworkAdapters_Click" />
+							</Grid>
+							<TextBlock x:Name="CurrentNetworkText" Style="{StaticResource MutedText}" TextWrapping="Wrap" Margin="2,5,0,6" />
+
+							<TextBlock Text="配置名称" Style="{StaticResource FieldLabel}" />
+							<TextBox x:Name="IpProfileNameBox" materialDesign:HintAssist.Hint="例如：办公网 / 设备调试网" />
+							<Grid Margin="0,3,0,0">
+								<Grid.ColumnDefinitions>
+									<ColumnDefinition Width="*" />
+									<ColumnDefinition Width="12" />
+									<ColumnDefinition Width="*" />
+								</Grid.ColumnDefinitions>
+								<StackPanel>
+									<TextBlock Text="IPv4 地址" Style="{StaticResource FieldLabel}" />
+									<TextBox x:Name="IpAddressBox" materialDesign:HintAssist.Hint="192.168.1.100" />
+								</StackPanel>
+								<StackPanel Grid.Column="2">
+									<TextBlock Text="子网掩码" Style="{StaticResource FieldLabel}" />
+									<TextBox x:Name="SubnetMaskBox" Text="255.255.255.0" />
+								</StackPanel>
+							</Grid>
+							<Grid>
+								<Grid.ColumnDefinitions>
+									<ColumnDefinition Width="*" />
+									<ColumnDefinition Width="12" />
+									<ColumnDefinition Width="*" />
+								</Grid.ColumnDefinitions>
+								<StackPanel>
+									<TextBlock Text="默认网关（可选）" Style="{StaticResource FieldLabel}" />
+									<TextBox x:Name="GatewayBox" materialDesign:HintAssist.Hint="192.168.1.1" />
+								</StackPanel>
+								<StackPanel Grid.Column="2">
+									<TextBlock Text="首选 DNS（可选）" Style="{StaticResource FieldLabel}" />
+									<TextBox x:Name="PrimaryDnsBox" materialDesign:HintAssist.Hint="223.5.5.5" />
+								</StackPanel>
+							</Grid>
+							<TextBlock Text="备用 DNS（可选）" Style="{StaticResource FieldLabel}" />
+							<TextBox x:Name="SecondaryDnsBox" materialDesign:HintAssist.Hint="1.1.1.1" />
+							<WrapPanel Margin="0,10,0,8">
+								<Button Content="保存为常用 IP" Style="{StaticResource PrimaryButton}" Click="AddIpProfile_Click" />
+								<Button Content="检测并应用" Style="{StaticResource PrimaryButton}" Click="ApplyEditorIp_Click" />
+								<Button Content="读取当前配置" Style="{StaticResource SecondaryButton}" Click="LoadCurrentNetwork_Click" />
+								<Button Content="恢复 DHCP" Style="{StaticResource SecondaryButton}" Click="EnableDhcp_Click" />
+							</WrapPanel>
+
+							<ItemsControl x:Name="IpProfileList" Margin="0,3,0,0">
+								<ItemsControl.ItemTemplate>
+									<DataTemplate>
+										<Border Background="White" BorderBrush="#DFE4EC" BorderThickness="1" CornerRadius="9" Padding="12" Margin="0,4">
+											<Grid>
+												<Grid.ColumnDefinitions>
+													<ColumnDefinition Width="*" />
+													<ColumnDefinition Width="Auto" />
+												</Grid.ColumnDefinitions>
+												<StackPanel>
+													<TextBlock Text="{Binding Name}" FontWeight="SemiBold" FontSize="14" />
+													<TextBlock Text="{Binding AddressSummary}" Foreground="#3F51B5" Margin="0,3,0,0" />
+													<TextBlock Text="{Binding NetworkSummary}" Style="{StaticResource MutedText}" FontSize="12" TextWrapping="Wrap" Margin="0,2,8,0" />
+													<TextBlock Text="{Binding AdapterName, StringFormat=网卡：{0}}" Style="{StaticResource MutedText}" FontSize="12" Margin="0,2,8,0" />
+												</StackPanel>
+												<StackPanel Grid.Column="1" Orientation="Horizontal" VerticalAlignment="Center">
+													<Button Content="切换" Style="{StaticResource PrimaryButton}" Padding="12,5" Tag="{Binding}" Click="ApplyIpProfile_Click" />
+													<Button Content="删除" Style="{StaticResource SecondaryButton}" Foreground="#C62828" Padding="10,5" Tag="{Binding}" Click="DeleteIpProfile_Click" />
+												</StackPanel>
+											</Grid>
+										</Border>
+									</DataTemplate>
+								</ItemsControl.ItemTemplate>
+							</ItemsControl>
 							<Button Content="保存设置" HorizontalAlignment="Left" Margin="0,24,0,0" Style="{StaticResource PrimaryButton}" Click="Save_Click" />
 						</StackPanel>
 					</ScrollViewer>
