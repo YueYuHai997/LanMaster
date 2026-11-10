@@ -8,5 +8,15 @@
     "C:\\Users\\MoregetWYC\\.nuget\\packages\\materialdesignthemes\\5.3.2\\materialdesignthemes.5.3.2.nupkg.sha512",
     "C:\\Users\\MoregetWYC\\.nuget\\packages\\microsoft.xaml.behaviors.wpf\\1.1.77\\microsoft.xaml.behaviors.wpf.1.1.77.nupkg.sha512"
   ],
-  "logs": []
+  "logs": [
+    {
+      "code": "NU1900",
+      "level": "Warning",
+      "message": "获取包漏洞数据时出错: 无法加载源 https://api.nuget.org/v3/index.json 的服务索引。",
+      "projectPath": "D:\\Works\\LanMaster\\LanControlWpf\\LanControlWpf.csproj",
+      "warningLevel": 1,
+      "filePath": "D:\\Works\\LanMaster\\LanControlWpf\\LanControlWpf.csproj",
+      "targetGraphs": []
+    }
+  ]
 }
